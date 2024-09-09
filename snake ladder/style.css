@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    background: url("backgroundimg.jpg");
+    min-height: 100vh;
+    background-size: 120vw 125vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont{
+    height: 700px;
+    width: 700px;
+    display: grid; 
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(10,1fr);
+   background: url("bgc.jpg");
+    background-size: cover;
+    transition: all 3s ease-in-out;
+}
+.token{
+ grid-column-start: 1;
+ grid-row-start: 10;
+  margin-top: 30px;
+  
+}
+.token2{
+    grid-column-start: 1;
+ grid-row-start: 10;
+  margin-top: 30px; 
+  margin-left: 20px;
+
+}
+.dicebox{
+  position: relative;
+    left: -200px;
+    height: 100px;
+    width: 200px;
+ 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.dicebox >input{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background-color: white;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+.dicebox >button{
+   margin-left: 55px;
+    width: 100px;
+    height: 40px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.players{
+    position: absolute;
+    top:300px;
+    left: 190px;
+    
+}
+.players >.player{
+    text-align: center;
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.start{
+    border: 2px solid black;
+    left: 370px;
+    top: 140px;
+    position: absolute;
+    font-size: 40px;
+    padding: 10px 68px;
+}
